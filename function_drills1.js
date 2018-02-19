@@ -15,4 +15,24 @@ function howOld(number){
 }
 
 console.log(howOld(10));
-console.log(whoAmI("Sofia", "23"));
+console.log(whoAmI('Sophia', 23));
+
+function whoAreYou(name, age){
+    if(typeof name === 'string' && typeof age === 'number'){
+        console.log(`My name is ${name} and I am ${age} years old.`);
+    }else{
+        console.log('Invalid Entry');
+    }
+}
+
+console.log(whoAreYou('Rose', 23));
+
+function checkInputs(name, age){
+  if(typeof name != 'string' && typeof age != 'number'){
+      console.log("Invalid entry, please try again.");
+  }else{
+      console.log(`I am ${name} & I am ${age} years old.`);
+  }
+}
+
+console.log(checkInputs(12, "string"));
